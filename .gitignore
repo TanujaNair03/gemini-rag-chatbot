@@ -1,0 +1,20 @@
+# Python cache & virtual environments
+__pycache__/
+venv/
+.venv/
+
+# Secrets file
+.env
+
+# IDE and OS-specific files
+.vscode/
+.idea/
+*.DS_Store
+.history/
+
+# Temp files created by your app
+temp/
+temp_files/
+
+# Old background image
+aura.jpg
