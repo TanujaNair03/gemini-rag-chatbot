@@ -12,9 +12,7 @@ venv/
 *.DS_Store
 .history/
 
-# Temp files created by your app
+# Temp files created by app
 temp/
 temp_files/
 
-# Old background image
-aura.jpg
