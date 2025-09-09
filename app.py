@@ -23,19 +23,8 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 
-ASSISTANT_AVATAR = "avatar.png" 
+ASSISTANT_AVATAR = "images/avatar.png" 
 
-
-# --- REMOVED: No longer need to load image as base64 ---
-# @st.cache_data  
-# def load_image_as_base64(filepath):
-#     """Loads a local image file and converts it to a Base64 string."""
-#     try:
-#         with open(filepath, "rb") as f:
-#             return base64.b64encode(f.read()).decode()
-#     except FileNotFoundError:
-#         logging.error(f"Background image not found at {filepath}")
-#         return None
 
 
 try:
@@ -57,7 +46,7 @@ def create_vectorstore_from_files(_uploaded_files):
     for file in _uploaded_files:
         file_path = os.path.join(temp_dir, file.name)
         with open(file_path, "wb") as f:
-            f.write(file.getbuffer())
+            f.write(file.getbuffer)
         
         try:
             loader = UnstructuredFileLoader(file_path)
