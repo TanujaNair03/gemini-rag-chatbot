@@ -5,9 +5,7 @@ The interface is created with Streamlit.
 
 The chatbot allows you to "chat" with your own custom documents. It first populates a vector database from text files and then uses the Gemini LLM to generate answers to your questions based *only* on the context found in those documents.
 
-## Demo
-## Demo
-![GIF Demo of the Chatbot](images/Untitled design.gif)
+
 
 ## Features
 
